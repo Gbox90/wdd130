@@ -1,6 +1,5 @@
 :root {
     --primary-color: #c25050bb;
-    --secondary-color: #075307;
     --accent1-color: antiquewhite;
     --accent2-color: rgba(11, 9, 103, 0.904);
     --heading-font: roboto, arial, sans-serif;
@@ -15,7 +14,7 @@
 
 body {
     font-family: var(--body-font);
-    color: var(--secondary-color)
+    color: var(--accent2-color)
 }
 
 header,
