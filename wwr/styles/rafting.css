@@ -41,6 +41,10 @@ nav ul {
     list-style: none;
 }
 
+li {
+    flex: 1 1 auto;
+}
+
 p,
 section,
 article {
