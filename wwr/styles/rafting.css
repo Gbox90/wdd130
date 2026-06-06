@@ -46,8 +46,8 @@ h2 {
     flex: 1 1 auto;
 }
 
-p,
 section,
+p,
 article {
     margin: 16px;
     padding: 8px;
