@@ -46,8 +46,12 @@ h2 {
     flex: 1 1 auto;
 }
 
+section {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+}
+
 p,
-section,
 article {
     margin: 16px;
     padding: 8px;
