@@ -24,6 +24,11 @@ footer {
     margin: auto;
 }
 
+header {
+    display: grid;
+    grid-template-columns: 40% 60%;
+}
+
 h1,
 h2 {
     font-family: var(--heading-font);
