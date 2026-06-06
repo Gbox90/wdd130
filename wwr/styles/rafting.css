@@ -57,6 +57,7 @@ article {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     align-items: center;
+    max-width: 840px;
 }
 
 .socialmedia a {
