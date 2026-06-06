@@ -36,13 +36,13 @@ h2 {
     color: var(--primary-color);
 }
 
-.nav {
+.navigation {
     display: flex;
     flex-direction: row;
     list-style: none;
 }
 
-.nav li {
+.navigation li {
     flex: 1 1 auto;
 }
 
