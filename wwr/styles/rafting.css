@@ -27,6 +27,7 @@ header {
     display: grid;
     grid-template-columns: 40% 60%;
     margin: 1rem auto;
+    max-width: 840px;
 }
 
 h1,
@@ -38,6 +39,7 @@ h2 {
 nav {
     display: flex;
     list-style: none;
+    flex: auto;
 }
 
 p,
