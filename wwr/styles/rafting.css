@@ -25,7 +25,7 @@ footer {
 
 header {
     display: grid;
-    grid-template-columns: 40% 60%;
+    grid-template-columns: 40% 1fr 1fr;
     margin: 1rem auto;
     max-width: 840px;
 }
@@ -36,10 +36,9 @@ h2 {
     color: var(--primary-color);
 }
 
-nav {
+nav ul {
     display: flex;
     list-style: none;
-    flex: auto;
 }
 
 p,
