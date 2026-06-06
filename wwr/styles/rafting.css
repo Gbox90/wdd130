@@ -46,10 +46,7 @@ h2 {
     flex: 1 1 auto;
 }
 
-.history {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-}
+section {}
 
 p,
 article {
