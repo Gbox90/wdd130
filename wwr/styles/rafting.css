@@ -53,6 +53,12 @@ article {
     padding: 8px;
 }
 
+.adventure {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+}
+
 .socialmedia a {
     text-decoration: none;
 }
