@@ -36,14 +36,14 @@ h2 {
     color: var(--primary-color);
 }
 
-nav {
+.nav {
     display: flex;
     flex-direction: row;
+    list-style: none;
 }
 
-nav li {
+.nav li {
     flex: 1 1 auto;
-    list-style: none;
 }
 
 p,
