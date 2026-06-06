@@ -46,7 +46,7 @@ h2 {
     flex: 1 1 auto;
 }
 
-section {
+.history {
     display: grid;
     grid-template-columns: 2fr 1fr 2fr;
 }
