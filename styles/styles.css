@@ -43,7 +43,10 @@ nav a {
     color: #fff;
 }
 
-main {}
+main {
+    grid-column: 2/3;
+    margin: 1rem;
+}
 
 main img {
     float: right;
@@ -61,6 +64,9 @@ p {
 
 aside {
     width: 20rem;
+    position: relative;
+    grid-column: 1/2;
+    grid-row: 1/2;
     margin: 1rem;
     border: 1px solid rgb(0 0 0 / 0.2);
     padding: var(--padding);
