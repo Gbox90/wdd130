@@ -1,5 +1,5 @@
 :root {
-    --primary-color: hsla(0, 87%, 42%, 0.822);
+    --primary-color: rgb(155, 5, 5);
     --accent1-color: antiquewhite;
     --accent2-color: rgba(11, 9, 103, 0.904);
     --heading-font: roboto, arial, sans-serif;
