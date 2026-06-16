@@ -17,8 +17,7 @@ body {
     color: var(--accent2-color);
 }
 
-main,
-footer {
+main {
     width: 840px;
     margin: auto;
 }
@@ -65,10 +64,6 @@ article {
 
 }
 
-.socialmedia a {
-    text-decoration: none;
-}
-
 .hero {
     position: relative;
 }
@@ -111,6 +106,24 @@ h2 {
     padding: 10px;
     background-color: #fff;
 
+}
+
+footer {
+    display: flex;
+    justify-content: right;
+    width: 840px;
+    margin: auto;
+
+}
+
+.socialmedia a {
+    text-align: right;
+    text-decoration: none;
+}
+
+.socialmedia img {
+    width: 50px;
+    height: auto;
 }
 
 /* CONTACT PAGE */
