@@ -158,7 +158,7 @@ footer {
 
 .map iframe {
     width: 100%;
-    height: 350px;
+    height: 500px;
     border: 1px solid #ccc;
 }
 
@@ -168,7 +168,7 @@ footer {
 }
 
 .contact-form label {
-    margin-top: .5rem;
+    margin-top: 1rem;
 }
 
 .contact-form input[type="text"],
