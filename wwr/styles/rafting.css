@@ -102,6 +102,18 @@ article {
     width: 125px;
 }
 
+.history {
+    display: grid;
+    grid-template-columns: 350px 1fr 350px;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.history img {
+    width: 150px;
+}
+
 h2 {
     padding: 10px;
     background-color: #fff;
