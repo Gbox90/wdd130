@@ -115,6 +115,10 @@ h2 {
 
 /* CONTACT PAGE */
 
+.info h1 {
+    text-align: center;
+}
+
 .company-info {
     text-align: center;
     margin-bottom: 2rem;
