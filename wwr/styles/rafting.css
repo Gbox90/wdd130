@@ -54,10 +54,15 @@ article {
 }
 
 .adventure {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    align-items: center;
-    max-width: 840px;
+    display: flex;
+    justify-content: space-around;
+    gap: 1rem;
+}
+
+.adventure img {
+    width: 150px;
+    height: auto;
+
 }
 
 .socialmedia a {
