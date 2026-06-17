@@ -214,5 +214,5 @@ footer {
 
 .action {
     display: grid;
-    grid-template-rows: ;
+    grid-template-rows: 1fr 1fr 1fr;
 }
