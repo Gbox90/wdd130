@@ -40,6 +40,7 @@ h2 {
 .navigation {
     display: flex;
     list-style: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .navigation li {
@@ -101,6 +102,11 @@ article {
 .hero article img {
     float: right;
     width: 125px;
+}
+
+.hero nav {
+    position: absolute;
+    top: 20px;
 }
 
 .history {
@@ -214,5 +220,120 @@ footer {
 
 .action {
     display: grid;
+    grid-template-columns: 3fr 1fr;
+    gap: 2rem;
+    margin: 2rem 0;
+    border: 1px solid var(--accent2-color);
+}
+
+.action-line {
+    background-color: lightsalmon;
+    width: 100%;
+}
+
+.action-line h2 {
+    position: absolute;
+    background: none;
+    color: #fff;
+
+}
+
+.action-line img {
+    float: right;
+    width: 350px;
+
+}
+
+.action-call {
+    display: grid;
     grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 2fr;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    background-color: #c0050544;
+    padding: 2rem;
+    border: solid 2px black;
+}
+
+.action-call button {
+    background-color: var(--accent2-color);
+    color: white;
+    border: none;
+    padding: .75rem;
+    cursor: pointer;
+}
+
+.action-call button:hover {
+    background-color: var(--primary-color);
+}
+
+.action-call img {
+    width: 200px;
+}
+
+/*Trips page*/
+
+.booking {
+    display: block;
+}
+
+.booking img {
+    width: 100%;
+    opacity: .5;
+}
+
+.booking h2 {
+    position: absolute;
+    top: 300px;
+    left: 500px;
+    background: none;
+    font-size: 35px;
+    color: black;
+
+}
+
+.contact {
+    display: flex;
+    justify-content: center;
+}
+
+.contact button {
+    background-color: var(--accent2-color);
+    color: white;
+    border: none;
+    padding: .75rem;
+    cursor: pointer;
+    size: larger;
+    font-size: larger;
+}
+
+.categories {
+    display: flex;
+    justify-content: space-around;
+}
+
+.categories img {
+    width: 250px;
+}
+
+table {
+    border-collapse: collapse;
+    border: 2px solid rgb(140 140 140);
+    letter-spacing: 1px;
+    width: 100%;
+}
+
+th,
+td {
+    border: 1px solid rgb(150 150 150);
+    padding: 8px 12px;
+    text-align: center;
+}
+
+thead tr,
+tfoot tr {
+    background-color: var(--accent2-color);
+    color: white;
+    font-weight: 700;
 }
