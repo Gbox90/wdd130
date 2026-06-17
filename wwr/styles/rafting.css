@@ -298,7 +298,7 @@ footer {
     justify-content: center;
 }
 
-.contact button {
+.button-link {
     background-color: var(--accent2-color);
     color: white;
     border: none;
