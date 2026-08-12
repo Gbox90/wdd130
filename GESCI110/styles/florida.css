@@ -1,0 +1,736 @@
+:root {
+    /* Main Florida palette */
+    --orange: #E9783D;
+    --orange-dark: #C95B2B;
+    --cream: #FFF4DC;
+    --cream-dark: #F2DFC0;
+
+    --palm-green: #264D36;
+    --leaf-green: #4F6F44;
+    --sage: #A5B48A;
+
+    --mustard: #D8A63A;
+    --coral: #DD6B59;
+    --sky: #8DB9B2;
+
+    --brown: #593E2E;
+    --ink: #292D25;
+    --white: #FFFDF7;
+
+    /* Layout */
+    --max-width: 1200px;
+    --radius: 24px;
+    --small-radius: 12px;
+
+    /* Retro border/shadow */
+    --border: 3px solid var(--palm-green);
+    --shadow: 6px 6px 0 var(--palm-green);
+}
+
+/* =========================
+   RESET
+========================= */
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background: var(--cream);
+    color: var(--ink);
+    font-family: "DM Sans", Arial, sans-serif;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
+
+/* =========================
+   TYPOGRAPHY
+========================= */
+
+h1,
+h2,
+h3 {
+    font-family: "Fraunces", Georgia, serif;
+    color: var(--palm-green);
+    line-height: 1.05;
+    margin-top: 0;
+}
+
+h1 {
+    font-size: clamp(3rem, 8vw, 6.5rem);
+}
+
+h2 {
+    font-size: clamp(2.2rem, 5vw, 4rem);
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+p {
+    font-size: 1.05rem;
+}
+
+.eyebrow {
+    display: inline-block;
+    text-transform: uppercase;
+    letter-spacing: 0.15em;
+    font-weight: 800;
+    color: var(--orange-dark);
+    margin-bottom: 12px;
+}
+
+/* =========================
+   GLOBAL CONTAINERS
+========================= */
+
+.container {
+    width: min(90%, var(--max-width));
+    margin-inline: auto;
+}
+
+section {
+    padding: 90px 0;
+}
+
+/* =========================
+   NAVIGATION
+========================= */
+
+.site-header {
+    background: var(--cream);
+    border-bottom: 3px solid var(--palm-green);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar {
+    min-height: 86px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 25px;
+}
+
+.logo {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.7rem;
+    font-weight: 900;
+    text-decoration: none;
+    color: var(--palm-green);
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 26px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links a {
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.nav-links a:hover {
+    color: var(--orange-dark);
+}
+
+.nav-cta {
+    background: var(--orange);
+    color: var(--white);
+    padding: 12px 20px;
+    border: 2px solid var(--palm-green);
+    border-radius: 999px;
+    box-shadow: 3px 3px 0 var(--palm-green);
+}
+
+/* =========================
+   HERO
+========================= */
+
+.hero {
+    min-height: 720px;
+    display: flex;
+    align-items: center;
+    overflow: hidden;
+    position: relative;
+}
+
+.hero-grid {
+    display: grid;
+    grid-template-columns: 1.05fr .95fr;
+    align-items: center;
+    gap: 60px;
+}
+
+.hero h1 span {
+    color: var(--orange);
+}
+
+.hero-copy {
+    max-width: 650px;
+}
+
+.hero-copy p {
+    font-size: 1.25rem;
+    max-width: 580px;
+}
+
+.hero-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px;
+    margin-top: 32px;
+}
+
+/* =========================
+   BUTTONS
+========================= */
+
+.btn {
+    display: inline-block;
+    padding: 15px 24px;
+    border-radius: 999px;
+    border: 3px solid var(--palm-green);
+    font-weight: 800;
+    text-decoration: none;
+    transition: .2s ease;
+}
+
+.btn-primary {
+    background: var(--orange);
+    color: var(--white);
+    box-shadow: 5px 5px 0 var(--palm-green);
+}
+
+.btn-secondary {
+    background: var(--mustard);
+    color: var(--palm-green);
+    box-shadow: 5px 5px 0 var(--palm-green);
+}
+
+.btn:hover {
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0 var(--palm-green);
+}
+
+/* =========================
+   IMAGE PLACEHOLDERS
+========================= */
+
+.photo-placeholder {
+    min-height: 420px;
+    background:
+        linear-gradient(135deg,
+            var(--sage),
+            var(--sky));
+    border: var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+
+    display: grid;
+    place-items: center;
+
+    text-align: center;
+    font-weight: 800;
+    color: var(--palm-green);
+}
+
+/* =========================
+   SAVE THE FOOD TOOLS
+========================= */
+
+.tools-section {
+    background: var(--palm-green);
+    color: var(--cream);
+}
+
+.tools-section h2 {
+    color: var(--cream);
+}
+
+.tool-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px;
+    margin-top: 45px;
+}
+
+.tool-card {
+    background: var(--cream);
+    color: var(--ink);
+    padding: 36px;
+    border-radius: var(--radius);
+    border: 3px solid var(--ink);
+    box-shadow: 7px 7px 0 var(--orange);
+}
+
+.tool-card h3 {
+    font-size: 2rem;
+}
+
+/* =========================
+   COST COMPARISON
+========================= */
+
+.comparison-section {
+    background: var(--cream-dark);
+}
+
+.comparison-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.meal-card {
+    border: var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    background: var(--white);
+}
+
+.meal-card-header {
+    padding: 25px 30px;
+}
+
+.fast-food .meal-card-header {
+    background: var(--coral);
+}
+
+.home-food .meal-card-header {
+    background: var(--sage);
+}
+
+.meal-card-body {
+    padding: 30px;
+}
+
+.price {
+    font-family: "Fraunces", serif;
+    font-size: 4rem;
+    font-weight: 900;
+    color: var(--palm-green);
+}
+
+.price-label {
+    font-weight: 800;
+    text-transform: uppercase;
+    letter-spacing: .08em;
+}
+
+/* =========================
+   TABLES
+========================= */
+
+.table-wrap {
+    overflow-x: auto;
+    margin-top: 40px;
+    border: 3px solid var(--palm-green);
+    border-radius: var(--small-radius);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+}
+
+th {
+    background: var(--palm-green);
+    color: var(--cream);
+    text-align: left;
+}
+
+th,
+td {
+    padding: 16px 20px;
+    border-bottom: 2px solid var(--cream-dark);
+}
+
+tr:last-child td {
+    border-bottom: 0;
+}
+
+/* =========================
+   TIPS
+========================= */
+
+.tips-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 25px;
+    margin-top: 45px;
+}
+
+.tip-card {
+    padding: 28px;
+    background: var(--white);
+    border: var(--border);
+    border-radius: var(--radius);
+}
+
+.tip-number {
+    width: 50px;
+    height: 50px;
+    background: var(--orange);
+    color: white;
+    border-radius: 50%;
+    display: grid;
+    place-items: center;
+    font-weight: 900;
+    margin-bottom: 20px;
+}
+
+/* =========================
+   RETRO DECORATION
+========================= */
+
+.sunburst {
+    width: 130px;
+    height: 130px;
+    background: var(--mustard);
+    border-radius: 50%;
+    border: 3px solid var(--palm-green);
+}
+
+/* =========================
+   FOOTER
+========================= */
+
+footer {
+    background: var(--palm-green);
+    color: var(--cream);
+    padding: 55px 0;
+}
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 850px) {
+
+    .hero-grid,
+    .comparison-grid,
+    .tool-grid,
+    .tips-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .nav-links {
+        display: none;
+    }
+
+    section {
+        padding: 65px 0;
+    }
+
+    .hero {
+        min-height: auto;
+        padding: 80px 0;
+    }
+
+}
+
+.band {
+    background: var(--palm-green);
+    color: var(--cream);
+}
+
+.band h2,
+.band h3 {
+    color: var(--cream);
+}
+
+.band .card h2,
+.band .card h3,
+.band .deal h2,
+.band .deal h3 {
+    color: var(--palm-green);
+}
+
+.soft-section {
+    background: var(--cream-dark);
+}
+
+.two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 30px;
+    align-items: start;
+}
+
+.card-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 24px;
+    margin-top: 40px;
+}
+
+.card {
+    background: var(--white);
+    border: var(--border);
+    border-radius: var(--radius);
+    padding: 28px;
+    box-shadow: 4px 4px 0 var(--palm-green);
+}
+
+.card.alt {
+    background: var(--cream-dark);
+}
+
+.stat {
+    font-family: "Fraunces", Georgia, serif;
+    font-size: clamp(2.6rem, 6vw, 4rem);
+    font-weight: 900;
+    line-height: 1;
+    color: var(--orange-dark);
+    margin-bottom: 8px;
+}
+
+.stat-label {
+    color: var(--palm-green);
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+
+.note {
+    margin: 26px 0;
+    padding: 20px 22px;
+    background: var(--mustard);
+    border: 3px solid var(--palm-green);
+    border-radius: var(--small-radius);
+    box-shadow: 4px 4px 0 var(--palm-green);
+}
+
+.source-link {
+    color: var(--orange-dark);
+    font-weight: 800;
+    text-decoration-thickness: 2px;
+    text-underline-offset: 3px;
+}
+
+.source-link:hover {
+    color: var(--palm-green);
+}
+
+/* ---------- Meal comparison controls ---------- */
+
+.controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 24px 0 30px;
+}
+
+.control-btn {
+    appearance: none;
+    cursor: pointer;
+    padding: 11px 17px;
+    border: 3px solid var(--palm-green);
+    border-radius: 999px;
+    background: var(--white);
+    color: var(--palm-green);
+    font: inherit;
+    font-weight: 900;
+    transition: transform 0.2s ease, background 0.2s ease;
+}
+
+.control-btn:hover {
+    transform: translateY(-2px);
+}
+
+.control-btn.active {
+    background: var(--palm-green);
+    color: var(--cream);
+}
+
+.search {
+    width: min(100%, 560px);
+    padding: 14px 16px;
+    border: 3px solid var(--palm-green);
+    border-radius: var(--small-radius);
+    background: var(--white);
+    color: var(--ink);
+    font: inherit;
+}
+
+.search:focus {
+    outline: 3px solid var(--mustard);
+    outline-offset: 3px;
+}
+
+/* ---------- Comparison table additions ---------- */
+
+.meal-comparison-page .table-wrap {
+    margin-top: 10px;
+}
+
+.meal-comparison-page table {
+    min-width: 1180px;
+}
+
+.meal-comparison-page tbody tr:nth-child(even) {
+    background: #fff9ec;
+}
+
+.meal-comparison-page tbody tr:hover {
+    background: var(--cream-dark);
+}
+
+.badge {
+    display: inline-block;
+    padding: 5px 9px;
+    border: 2px solid var(--palm-green);
+    border-radius: 999px;
+    font-size: 0.76rem;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.badge.fast {
+    background: #ffd3ad;
+}
+
+.badge.sit {
+    background: #c7d2ad;
+}
+
+.badge.quick {
+    background: #b7d6d0;
+}
+
+/* ---------- Quick family meal section ---------- */
+
+.deal-grid {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 26px;
+    margin-top: 40px;
+}
+
+.deal {
+    padding: 28px;
+    border: var(--border);
+    border-radius: var(--radius);
+    background: var(--white);
+    color: var(--ink);
+    box-shadow: 5px 5px 0 var(--orange);
+}
+
+.deal .price {
+    margin: 12px 0;
+    color: var(--orange-dark);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 3rem;
+    font-weight: 900;
+    line-height: 1;
+}
+
+/* ---------- Food-waste research page ---------- */
+
+.callout {
+    padding: 26px;
+    background: var(--white);
+    border-left: 10px solid var(--orange);
+    border-radius: 0 var(--radius) var(--radius) 0;
+}
+
+.quote-card {
+    padding: 28px;
+    background: var(--cream-dark);
+    border: var(--border);
+    border-radius: var(--radius);
+}
+
+.timeline {
+    display: grid;
+    gap: 18px;
+    margin-top: 35px;
+}
+
+.timeline-item {
+    display: grid;
+    grid-template-columns: 80px minmax(0, 1fr);
+    gap: 20px;
+    align-items: start;
+    padding-bottom: 18px;
+    border-bottom: 2px solid var(--cream-dark);
+}
+
+.timeline-item:last-child {
+    border-bottom: 0;
+}
+
+.timeline-year {
+    color: var(--orange-dark);
+    font-family: "Fraunces", Georgia, serif;
+    font-size: 1.45rem;
+    font-weight: 900;
+}
+
+.references {
+    font-size: 0.96rem;
+}
+
+.references li {
+    margin-bottom: 14px;
+}
+
+/* ---------- Accessibility / utility ---------- */
+
+.meal-comparison-page [hidden] {
+    display: none !important;
+}
+
+/* ---------- Responsive additions ---------- */
+
+@media (max-width: 900px) {
+
+    .two-col,
+    .card-grid,
+    .deal-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .timeline-item {
+        grid-template-columns: 60px minmax(0, 1fr);
+    }
+}
+
+@media (max-width: 560px) {
+
+    .timeline-item {
+        grid-template-columns: 1fr;
+        gap: 4px;
+    }
+
+    .controls {
+        align-items: stretch;
+    }
+
+    .control-btn {
+        flex: 1 1 45%;
+    }
+}
