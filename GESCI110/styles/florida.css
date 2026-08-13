@@ -581,6 +581,10 @@ footer {
     outline-offset: 3px;
 }
 
+.card p {
+    color: #2f3a2e;
+}
+
 /* ---------- Comparison table additions ---------- */
 
 .meal-comparison-page .table-wrap {

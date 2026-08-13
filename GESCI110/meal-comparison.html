@@ -1,1558 +1,1211 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>Eat Out or Eat In? | Central Florida Saves Food</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>
+        Meal Cost Comparison | Stop Waste Florida
+    </title>
+
     <meta name="description"
-      content="A Central Florida comparison of restaurant meals, at-home alternatives, family meal deals, price per serving and nutrition.">
+      content="Compare popular Central Florida restaurant meals with lower-cost at-home alternatives.">
 
-    <link rel="stylesheet" href="florida.css">
-
+    <link rel="stylesheet" href="styles/florida.css">
 </head>
 
+
 <body class="meal-comparison-page">
+
+    <!-- =========================
+         NAVIGATION
+    ========================== -->
+
     <header class="site-header">
+
         <div class="container navbar">
-            <a class="logo" href="index.html">Central Florida Saves Food</a>
-            <ul class="nav-links">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="#compare">Meal Comparison</a></li>
-                <li><a href="#family">Family Meals</a></li>
-                <li><a href="food-waste-impact.html">Food Waste Impact</a></li>
-            </ul>
+
+            <a href="stopwaste.html" class="logo">
+                Stop Waste Florida
+            </a>
+
+            <nav>
+
+                <ul class="nav-links">
+
+                    <li>
+                        <a href="stopwaste.html">
+                            Home
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="meal-comparison.html">
+                            Meal Comparison
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="food-waste-impact.html">
+                            Food Waste Impact
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://savethefood.com/guestimator/guests#guest-container"
+                          target="_blank" rel="noopener">
+                            SaveTheFood Guest-imator ↗
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://savethefood.com/meal-prep-mate/" target="_blank"
+                          rel="noopener">
+                            SaveTheFood Meal Prep Mate ↗
+                        </a>
+                    </li>
+
+                </ul>
+
+            </nav>
+
         </div>
+
     </header>
 
+
     <main>
+
+        <!-- =========================
+             HERO
+        ========================== -->
+
         <section class="hero">
-            <div class="sun"></div>
+
             <div class="container hero-grid">
-                <div>
-                    <span class="eyebrow">Central Florida • August 2026 research snapshot</span>
-                    <h1>Eat Out or <span>Eat In?</span></h1>
-                    <p>Compare common restaurant meals with a practical at-home version. The goal is
-                        not to tell people they can never eat out — it is to make the tradeoff
-                        visible: price per serving, nutrition, and how many future meals the same
-                        grocery purchase can create.</p>
-                    <a class="btn" href="#compare">Compare meals</a>
+
+                <div class="hero-copy">
+
+                    <span class="eyebrow">
+                        Central Florida Meal Guide
+                    </span>
+
+                    <h1>
+                        Eat Out or
+                        <span>Eat In?</span>
+                    </h1>
+
+                    <p>
+                        Compare the price and nutritional
+                        value of popular restaurant meals
+                        with similar meals prepared at home.
+                    </p>
+
+                    <a href="#comparison" class="btn btn-primary">
+                        View Comparisons
+                    </a>
+
                 </div>
+
+
                 <div class="photo-placeholder">
-                    STOCK PHOTO SPACE<br><br>
-                    Suggested image: retro diner tray beside a home-cooked burger, fries and
-                    produce.
+
+                    <img
+                      src="https://images.unsplash.com/photo-1466978913421-dad2ebd01d17?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OHx8ZmFzdCUyMGZvb2R8ZW58MHwwfDB8fHwy">
+
                 </div>
+
             </div>
+
         </section>
 
-        <section class="band">
-            <div class="container">
-                <div class="two-col">
-                    <div>
-                        <span class="eyebrow">How to read the page</span>
-                        <h2>Restaurant price vs. usable food value.</h2>
-                    </div>
-                    <div>
-                        <p>Restaurant prices are snapshots from Orlando/Central Florida online menus
-                            or current chain promotions. Delivery-platform prices can be higher than
-                            in-store prices. At-home figures are planning estimates based on
-                            comparable grocery ingredients and reasonable serving sizes, not
-                            identical recipes.</p>
-                        <p><strong>For publication:</strong> re-check local prices periodically,
-                            especially delivery prices and limited-time promotions.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
 
-        <section id="compare">
+        <!-- =========================
+             TABLE SECTION
+        ========================== -->
+
+        <section id="comparison">
+
             <div class="container">
-                <span class="eyebrow">75 meal comparisons • 15 restaurant brands</span>
-                <h2>What does one serving really cost?</h2>
-                <div class="note"><strong>Research status:</strong> Rows with “~” are working
-                    estimates and should be verified against the linked live menu before the site is
-                    formally published. Nutrition varies with drink, side, sauce and customization.
-                    This table is designed to make those assumptions visible rather than hide them.
+
+                <span class="eyebrow">
+                    Price + Nutrition
+                </span>
+
+                <h2>
+                    Compare Popular Meals
+                </h2>
+
+
+                <div class="note">
+
+                    <strong>Important:</strong>
+
+                    Prices vary by location, date,
+                    ordering method, and promotion.
+                    Values marked with "~" are approximate.
+
                 </div>
+
+
+                <label for="search">
+                    <strong>
+                        Search:
+                    </strong>
+                </label>
+
+                <br><br>
 
                 <input id="search" class="search" type="search"
-                  placeholder="Search restaurant, meal, at-home option or store…">
+                  placeholder="Search restaurant, meal, or grocery store...">
+
+
                 <div class="controls">
-                    <button class="control-btn active" data-filter="All">All 75 meals</button>
-                    <button class="control-btn" data-filter="Fast Food">Fast food</button>
-                    <button class="control-btn" data-filter="Sit-Down">Sit-down</button>
-                    <button class="control-btn" data-filter="Quick Service">Quick service</button>
+
+                    <button class="control-btn active" data-filter="All">
+                        All
+                    </button>
+
+                    <button class="control-btn" data-filter="Fast Food">
+                        Fast Food
+                    </button>
+
+                    <button class="control-btn" data-filter="Sit-Down">
+                        Sit-Down
+                    </button>
+
+                    <button class="control-btn" data-filter="Quick Service">
+                        Quick Service
+                    </button>
+
                 </div>
+
 
                 <div class="table-wrap">
-                    <table aria-label="Restaurant meal and at-home cost comparison">
+
+                    <table>
+
                         <thead>
+
                             <tr>
-                                <th>Type</th>
-                                <th>Restaurant</th>
-                                <th>Meal</th>
-                                <th>Restaurant price</th>
-                                <th>Calories</th>
-                                <th>Protein</th>
-                                <th>Sodium</th>
-                                <th>At-home equivalent</th>
-                                <th>Est. home cost / serving</th>
-                                <th>Est. home calories</th>
-                                <th>Where to shop</th>
-                                <th>Source</th>
+
+                                <th>
+                                    Type
+                                </th>
+
+                                <th>
+                                    Restaurant
+                                </th>
+
+                                <th>
+                                    Meal
+                                </th>
+
+                                <th>
+                                    Restaurant Price
+                                </th>
+
+                                <th>
+                                    Calories
+                                </th>
+
+                                <th>
+                                    At-Home Alternative
+                                </th>
+
+                                <th>
+                                    Home Cost
+                                </th>
+
+                                <th>
+                                    Where to Shop
+                                </th>
+
+                                <th>
+                                    Source
+                                </th>
+
                             </tr>
+
                         </thead>
+
+
                         <tbody id="mealRows">
 
-                            <tr data-category="Fast Food"
-                              data-search="mcdonald's big mac meal homemade burger + oven fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>McDonald's</strong></td>
-                                <td>Big Mac Meal</td>
-                                <td><strong>$11.59</strong></td>
-                                <td>910–1,150</td>
-                                <td>~29 g</td>
-                                <td>~1,250+ mg</td>
-                                <td>Homemade burger + oven fries + drink</td>
-                                <td><strong>~$2.80</strong></td>
-                                <td>~650–800</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/mcdonalds"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+
+                            <!-- McDONALD'S -->
 
                             <tr data-category="Fast Food"
-                              data-search="mcdonald's quarter pounder w/ cheese meal ¼-lb cheeseburger + fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>McDonald's</strong></td>
-                                <td>Quarter Pounder w/ Cheese Meal</td>
-                                <td><strong>$12.29</strong></td>
-                                <td>840–1,080</td>
-                                <td>~36 g</td>
-                                <td>~1,300+ mg</td>
-                                <td>¼-lb cheeseburger + fries + drink</td>
-                                <td><strong>~$3.10</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/mcdonalds"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="mcdonalds big mac burger fries aldi">
+
+                                <td>
+                                    <span class="badge fast">
+                                        Fast Food
+                                    </span>
+                                </td>
+
+                                <td>
+                                    McDonald's
+                                </td>
+
+                                <td>
+                                    Big Mac Meal
+                                </td>
+
+                                <td>
+                                    ~$11.59
+                                </td>
+
+                                <td>
+                                    ~910–1,150
+                                </td>
+
+                                <td>
+                                    Homemade burger,
+                                    oven fries,
+                                    and drink
+                                </td>
+
+                                <td>
+                                    ~$2.80–$4.00
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.mcdonalds.com/us/en-us/full-menu.html"
+                                      target="_blank" rel="noopener">
+                                        McDonald's ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- CHICK-FIL-A -->
 
                             <tr data-category="Fast Food"
-                              data-search="mcdonald's double quarter pounder meal double burger + fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>McDonald's</strong></td>
-                                <td>Double Quarter Pounder Meal</td>
-                                <td><strong>$13.79</strong></td>
-                                <td>1,060–1,300</td>
-                                <td>~52 g</td>
-                                <td>~1,700+ mg</td>
-                                <td>Double burger + fries + drink</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~900–1,050</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/mcdonalds"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="chick fil a chicken sandwich fries walmart aldi">
+
+                                <td>
+                                    <span class="badge fast">
+                                        Fast Food
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Chick-fil-A
+                                </td>
+
+                                <td>
+                                    Chicken Sandwich Meal
+                                </td>
+
+                                <td>
+                                    ~$12–$14
+                                </td>
+
+                                <td>
+                                    ~840–1,050
+                                </td>
+
+                                <td>
+                                    Chicken sandwich
+                                    with oven fries
+                                </td>
+
+                                <td>
+                                    ~$3.50–$5.00
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.chick-fil-a.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Chick-fil-A ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- WENDY'S -->
 
                             <tr data-category="Fast Food"
-                              data-search="mcdonald's bacon quarter pounder meal bacon cheeseburger + fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>McDonald's</strong></td>
-                                <td>Bacon Quarter Pounder Meal</td>
-                                <td><strong>$13.39</strong></td>
-                                <td>950–1,190</td>
-                                <td>~40 g</td>
-                                <td>~1,500+ mg</td>
-                                <td>Bacon cheeseburger + fries + drink</td>
-                                <td><strong>~$3.80</strong></td>
-                                <td>~800–950</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/mcdonalds"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="wendys baconator burger fries aldi">
+
+                                <td>
+                                    <span class="badge fast">
+                                        Fast Food
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Wendy's
+                                </td>
+
+                                <td>
+                                    Baconator Combo
+                                </td>
+
+                                <td>
+                                    ~$14–$16
+                                </td>
+
+                                <td>
+                                    ~1,200+
+                                </td>
+
+                                <td>
+                                    Double bacon burger
+                                    and oven fries
+                                </td>
+
+                                <td>
+                                    ~$5–$6
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://order.wendys.com/us/en/national/menu"
+                                      target="_blank" rel="noopener">
+                                        Wendy's ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- BURGER KING -->
 
                             <tr data-category="Fast Food"
-                              data-search="mcdonald's double bacon quarter pounder meal double bacon burger + fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>McDonald's</strong></td>
-                                <td>Double Bacon Quarter Pounder Meal</td>
-                                <td><strong>$14.29</strong></td>
-                                <td>1,220–1,460</td>
-                                <td>~58 g</td>
-                                <td>~2,000+ mg</td>
-                                <td>Double bacon burger + fries + drink</td>
-                                <td><strong>~$5.10</strong></td>
-                                <td>~1,000–1,150</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/mcdonalds"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="burger king whopper fries aldi">
+
+                                <td>
+                                    <span class="badge fast">
+                                        Fast Food
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Burger King
+                                </td>
+
+                                <td>
+                                    Whopper Meal
+                                </td>
+
+                                <td>
+                                    ~$14–$16
+                                </td>
+
+                                <td>
+                                    ~1,300+
+                                </td>
+
+                                <td>
+                                    Grilled burger,
+                                    fries,
+                                    and drink
+                                </td>
+
+                                <td>
+                                    ~$3–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.bk.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Burger King ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- POPEYES -->
 
                             <tr data-category="Fast Food"
-                              data-search="chick-fil-a chicken sandwich meal breaded chicken sandwich + oven fries aldi / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Chick-fil-A</strong></td>
-                                <td>Chicken Sandwich Meal</td>
-                                <td><strong>$12.69</strong></td>
-                                <td>~840–1,050</td>
-                                <td>~34 g</td>
-                                <td>~1,500+ mg</td>
-                                <td>Breaded chicken sandwich + oven fries</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~650–800</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/chick-fil-a"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="popeyes chicken sandwich fries walmart aldi">
+
+                                <td>
+                                    <span class="badge fast">
+                                        Fast Food
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Popeyes
+                                </td>
+
+                                <td>
+                                    Chicken Sandwich Combo
+                                </td>
+
+                                <td>
+                                    ~$11–$14
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Chicken sandwich
+                                    with oven fries
+                                </td>
+
+                                <td>
+                                    ~$4–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.walmart.com/" target="_blank"
+                                      rel="noopener" class="source-link">
+                                        Walmart ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.popeyes.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Popeyes ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Fast Food"
-                              data-search="chick-fil-a nuggets meal chicken bites + potato wedges + drink aldi / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Chick-fil-A</strong></td>
-                                <td>Nuggets Meal</td>
-                                <td><strong>$12.69</strong></td>
-                                <td>~700–1,000</td>
-                                <td>~35 g</td>
-                                <td>~1,400+ mg</td>
-                                <td>Chicken bites + potato wedges + drink</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~600–750</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/chick-fil-a"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
 
-                            <tr data-category="Fast Food"
-                              data-search="chick-fil-a deluxe meal chicken deluxe sandwich + fries publix / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Chick-fil-A</strong></td>
-                                <td>Deluxe Meal</td>
-                                <td><strong>~$14.89</strong></td>
-                                <td>~900–1,100</td>
-                                <td>~37 g</td>
-                                <td>~1,600+ mg</td>
-                                <td>Chicken deluxe sandwich + fries</td>
-                                <td><strong>~$4.10</strong></td>
-                                <td>~700–850</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/chick-fil-a-999-us-1-s/FF9t0b24WO6-sEyIdCVBHQ"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="chick-fil-a spicy deluxe meal spicy chicken sandwich + fries publix / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Chick-fil-A</strong></td>
-                                <td>Spicy Deluxe Meal</td>
-                                <td><strong>~$15.39</strong></td>
-                                <td>~900–1,150</td>
-                                <td>~38 g</td>
-                                <td>~1,700+ mg</td>
-                                <td>Spicy chicken sandwich + fries</td>
-                                <td><strong>~$4.20</strong></td>
-                                <td>~700–850</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/chick-fil-a-999-us-1-s/FF9t0b24WO6-sEyIdCVBHQ"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="chick-fil-a family style nuggets meal chicken tender family dinner + 4 sides aldi / costco">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Chick-fil-A</strong></td>
-                                <td>Family Style Nuggets Meal</td>
-                                <td><strong>$42.89</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Chicken tender family dinner + 4 sides</td>
-                                <td><strong>~$20–25</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Costco</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/chick-fil-a-633-n-alafaya-trl/xAiDv0G9RdSxQSSoADG00w"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="wendy's biggie bag — crispy chicken chicken sandwich + nuggets + fries walmart / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Wendy's</strong></td>
-                                <td>Biggie Bag — Crispy Chicken</td>
-                                <td><strong>~$5–$7</strong></td>
-                                <td>~750–1,050</td>
-                                <td>~28 g</td>
-                                <td>~1,400+ mg</td>
-                                <td>Chicken sandwich + nuggets + fries</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~650–800</td>
-                                <td>Walmart / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://order.wendys.com/us/en/national/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="wendy's biggie bag — double stack double cheeseburger + nuggets + fries aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Wendy's</strong></td>
-                                <td>Biggie Bag — Double Stack</td>
-                                <td><strong>~$6–$8</strong></td>
-                                <td>~850–1,100</td>
-                                <td>~35 g</td>
-                                <td>~1,600+ mg</td>
-                                <td>Double cheeseburger + nuggets + fries</td>
-                                <td><strong>~$4.25</strong></td>
-                                <td>~750–900</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://order.wendys.com/us/en/national/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="wendy's dave's single combo single burger + fries + drink aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Wendy's</strong></td>
-                                <td>Dave's Single Combo</td>
-                                <td><strong>~$11–$13</strong></td>
-                                <td>~900–1,200</td>
-                                <td>~35 g</td>
-                                <td>~1,500+ mg</td>
-                                <td>Single burger + fries + drink</td>
-                                <td><strong>~$3.10</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://order.wendys.com/us/en/national/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="wendy's spicy chicken combo spicy chicken sandwich + fries publix / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Wendy's</strong></td>
-                                <td>Spicy Chicken Combo</td>
-                                <td><strong>~$11–$13</strong></td>
-                                <td>~850–1,100</td>
-                                <td>~31 g</td>
-                                <td>~1,600+ mg</td>
-                                <td>Spicy chicken sandwich + fries</td>
-                                <td><strong>~$3.90</strong></td>
-                                <td>~700–850</td>
-                                <td>Publix / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://order.wendys.com/us/en/national/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="wendy's baconator combo double bacon cheeseburger + fries aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Wendy's</strong></td>
-                                <td>Baconator Combo</td>
-                                <td><strong>~$14–$16</strong></td>
-                                <td>~1,200–1,500</td>
-                                <td>~60 g</td>
-                                <td>~2,000+ mg</td>
-                                <td>Double bacon cheeseburger + fries</td>
-                                <td><strong>~$5.25</strong></td>
-                                <td>~1,000–1,150</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://order.wendys.com/us/en/national/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="burger king whopper meal flame-grilled style burger + fries aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Burger King</strong></td>
-                                <td>Whopper Meal</td>
-                                <td><strong>~$14.69–$16.59</strong></td>
-                                <td>~1,350</td>
-                                <td>~32 g</td>
-                                <td>~1,500+ mg</td>
-                                <td>Flame-grilled style burger + fries</td>
-                                <td><strong>~$3.25</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/burger-king"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="burger king impossible whopper meal plant burger + fries + drink publix / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Burger King</strong></td>
-                                <td>Impossible Whopper Meal</td>
-                                <td><strong>$14.89</strong></td>
-                                <td>~1,310</td>
-                                <td>~28 g</td>
-                                <td>~1,700+ mg</td>
-                                <td>Plant burger + fries + drink</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~700–850</td>
-                                <td>Publix / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/burger-king"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="burger king bacon king meal double bacon burger + oven fries aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Burger King</strong></td>
-                                <td>Bacon King Meal</td>
-                                <td><strong>$16.59</strong></td>
-                                <td>~1,890</td>
-                                <td>~60 g</td>
-                                <td>~2,300+ mg</td>
-                                <td>Double bacon burger + oven fries</td>
-                                <td><strong>~$5.25</strong></td>
-                                <td>~1,000–1,150</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/burger-king"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="burger king original chicken sandwich meal chicken sandwich + fries walmart / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Burger King</strong></td>
-                                <td>Original Chicken Sandwich Meal</td>
-                                <td><strong>$13.98</strong></td>
-                                <td>~1,200–1,450</td>
-                                <td>~30 g</td>
-                                <td>~1,700+ mg</td>
-                                <td>Chicken sandwich + fries</td>
-                                <td><strong>~$3.80</strong></td>
-                                <td>~700–850</td>
-                                <td>Walmart / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/burger-king"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="burger king double cheeseburger value meal double cheeseburger + fries aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Burger King</strong></td>
-                                <td>Double Cheeseburger Value Meal</td>
-                                <td><strong>~$5–$8</strong></td>
-                                <td>~800–1,050</td>
-                                <td>~30 g</td>
-                                <td>~1,400+ mg</td>
-                                <td>Double cheeseburger + fries</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/burger-king"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="popeyes 4pc shrimp + 2pc tenders combo shrimp + chicken tenders + baked fries walmart / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Popeyes</strong></td>
-                                <td>4pc Shrimp + 2pc Tenders Combo</td>
-                                <td><strong>$11.09</strong></td>
-                                <td>Varies</td>
-                                <td>~25–35 g</td>
-                                <td>High</td>
-                                <td>Shrimp + chicken tenders + baked fries</td>
-                                <td><strong>~$5.50</strong></td>
-                                <td>~650–850</td>
-                                <td>Walmart / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/kissimmee-fl/popeyes"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="popeyes 8pc butterfly shrimp combo breaded shrimp + side + biscuit walmart / publix">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Popeyes</strong></td>
-                                <td>8pc Butterfly Shrimp Combo</td>
-                                <td><strong>$11.09</strong></td>
-                                <td>Varies</td>
-                                <td>~20–30 g</td>
-                                <td>High</td>
-                                <td>Breaded shrimp + side + biscuit</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~600–800</td>
-                                <td>Walmart / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/kissimmee-fl/popeyes"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="popeyes 6pc boneless wings combo boneless wings + side + drink aldi / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Popeyes</strong></td>
-                                <td>6pc Boneless Wings Combo</td>
-                                <td><strong>$14.89</strong></td>
-                                <td>Varies</td>
-                                <td>~30–40 g</td>
-                                <td>High</td>
-                                <td>Boneless wings + side + drink</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~700–900</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/kissimmee-fl/popeyes"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="popeyes 6pc bone-in wings combo oven wings + side + drink publix / aldi">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Popeyes</strong></td>
-                                <td>6pc Bone-In Wings Combo</td>
-                                <td><strong>$14.89</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>High</td>
-                                <td>Oven wings + side + drink</td>
-                                <td><strong>~$5.25</strong></td>
-                                <td>~650–850</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/kissimmee-fl/popeyes"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Fast Food"
-                              data-search="popeyes chicken sandwich combo chicken sandwich + oven fries aldi / walmart">
-                                <td><span class="badge fast">Fast Food</span></td>
-                                <td><strong>Popeyes</strong></td>
-                                <td>Chicken Sandwich Combo</td>
-                                <td><strong>~$11–$14</strong></td>
-                                <td>Varies</td>
-                                <td>~30–40 g</td>
-                                <td>High</td>
-                                <td>Chicken sandwich + oven fries</td>
-                                <td><strong>~$3.90</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/popeyes-louisiana-chicken-12131-s-orange-blossom-trl/BgLNGNkfT_iOqq1_AJKgGw"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+                            <!-- CHILI'S -->
 
                             <tr data-category="Sit-Down"
-                              data-search="chili's triple dipper three-app sampler made at home aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Chili's</strong></td>
-                                <td>Triple Dipper</td>
-                                <td><strong>$20.99–$21.29</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>Three-app sampler made at home</td>
-                                <td><strong>~$7–$9</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/chilis"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="chilis chicken crispers aldi walmart">
+
+                                <td>
+                                    <span class="badge sit">
+                                        Sit-Down
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Chili's
+                                </td>
+
+                                <td>
+                                    Chicken Crispers
+                                </td>
+
+                                <td>
+                                    ~$20+
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Chicken tenders,
+                                    fries,
+                                    and vegetables
+                                </td>
+
+                                <td>
+                                    ~$5–$7
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.chilis.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Chili's ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- APPLEBEE'S -->
 
                             <tr data-category="Sit-Down"
-                              data-search="chili's smokehouse combo pick 2 bbq chicken/ribs + mac + fries publix / aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Chili's</strong></td>
-                                <td>Smokehouse Combo Pick 2</td>
-                                <td><strong>$28.49</strong></td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>High</td>
-                                <td>BBQ chicken/ribs + mac + fries</td>
-                                <td><strong>~$8–$11</strong></td>
-                                <td>Varies</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/chilis"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="applebees chicken pasta publix aldi">
+
+                                <td>
+                                    <span class="badge sit">
+                                        Sit-Down
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Applebee's
+                                </td>
+
+                                <td>
+                                    Chicken Pasta Meal
+                                </td>
+
+                                <td>
+                                    ~$20+
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Chicken pasta
+                                    with vegetables
+                                </td>
+
+                                <td>
+                                    ~$5–$7
+                                </td>
+
+                                <td>
+                                    <a href="https://www.publix.com/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        Publix ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.applebees.com/en/menu" target="_blank"
+                                      rel="noopener">
+                                        Applebee's ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- OLIVE GARDEN -->
 
                             <tr data-category="Sit-Down"
-                              data-search="chili's smokehouse combo pick 3 3-protein bbq platter + sides publix / aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Chili's</strong></td>
-                                <td>Smokehouse Combo Pick 3</td>
-                                <td><strong>$32.79</strong></td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>High</td>
-                                <td>3-protein BBQ platter + sides</td>
-                                <td><strong>~$10–$13</strong></td>
-                                <td>Varies</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/chilis"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="olive garden chicken parmesan pasta aldi publix">
+
+                                <td>
+                                    <span class="badge sit">
+                                        Sit-Down
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Olive Garden
+                                </td>
+
+                                <td>
+                                    Chicken Parmigiana
+                                </td>
+
+                                <td>
+                                    ~$20–$24
+                                </td>
+
+                                <td>
+                                    ~1,000+
+                                </td>
+
+                                <td>
+                                    Chicken parmesan
+                                    with pasta
+                                </td>
+
+                                <td>
+                                    ~$5–$7
+                                </td>
+
+                                <td>
+                                    <a href="https://www.publix.com/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        Publix ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.olivegarden.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Olive Garden ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- TEXAS ROADHOUSE -->
 
                             <tr data-category="Sit-Down"
-                              data-search="chili's crispy chicken crispers combo chicken tenders + fries + corn aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Chili's</strong></td>
-                                <td>Crispy Chicken Crispers Combo</td>
-                                <td><strong>$21.29</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>High</td>
-                                <td>Chicken tenders + fries + corn</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~700–900</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.grubhub.com/restaurant/chilis-7385-w-colonial-dr-orlando/3323073"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="texas roadhouse sirloin steak aldi publix">
+
+                                <td>
+                                    <span class="badge sit">
+                                        Sit-Down
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Texas Roadhouse
+                                </td>
+
+                                <td>
+                                    Sirloin Dinner
+                                </td>
+
+                                <td>
+                                    ~$15–$20
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Sirloin steak
+                                    with two sides
+                                </td>
+
+                                <td>
+                                    ~$7–$9
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.texasroadhouse.com/global-menu"
+                                      target="_blank" rel="noopener">
+                                        Texas Roadhouse ↗
+                                    </a>
+                                </td>
+
                             </tr>
+
+
+                            <!-- IHOP -->
 
                             <tr data-category="Sit-Down"
-                              data-search="chili's big crispy chicken sandwich chicken sandwich + mac + fries aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Chili's</strong></td>
-                                <td>Big Crispy Chicken Sandwich</td>
-                                <td><strong>$19.29</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>High</td>
-                                <td>Chicken sandwich + mac + fries</td>
-                                <td><strong>~$5.50</strong></td>
-                                <td>~800–1,000</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/chilis-grill-%26-bar-7021-international-dr/XCiX2kQwXQuKo-77QTqiTg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="ihop breakfast pancakes eggs bacon aldi">
+
+                                <td>
+                                    <span class="badge sit">
+                                        Sit-Down
+                                    </span>
+                                </td>
+
+                                <td>
+                                    IHOP
+                                </td>
+
+                                <td>
+                                    Breakfast Sampler
+                                </td>
+
+                                <td>
+                                    ~$15–$18
+                                </td>
+
+                                <td>
+                                    ~900+
+                                </td>
+
+                                <td>
+                                    Eggs, bacon,
+                                    sausage,
+                                    and pancakes
+                                </td>
+
+                                <td>
+                                    ~$3–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.ihop.com/en/menu" target="_blank"
+                                      rel="noopener">
+                                        IHOP ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Sit-Down"
-                              data-search="applebee's 2 for $25 — per person two home entrées + shared starter aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Applebee's</strong></td>
-                                <td>2 for $25 — per person</td>
-                                <td><strong>$12.50 + shared app</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Two home entrées + shared starter</td>
-                                <td><strong>~$6–$8</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.applebees.com/en/specials/2-for-25"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
 
-                            <tr data-category="Sit-Down"
-                              data-search="applebee's ultimate trio three-app sampler at home walmart / aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Applebee's</strong></td>
-                                <td>Ultimate Trio</td>
-                                <td><strong>$21.29</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>Three-app sampler at home</td>
-                                <td><strong>~$7–$9</strong></td>
-                                <td>Varies</td>
-                                <td>Walmart / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/applebees-n-international-dr/-YjTNEhQQEOdK1ag6Jy6VA"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="applebee's chicken parmesan fettuccine chicken parm + pasta aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Applebee's</strong></td>
-                                <td>Chicken Parmesan Fettuccine</td>
-                                <td><strong>$23.79</strong></td>
-                                <td>Varies</td>
-                                <td>~45–55 g</td>
-                                <td>High</td>
-                                <td>Chicken parm + pasta</td>
-                                <td><strong>~$5.50</strong></td>
-                                <td>~700–900</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/applebees-n-international-dr/-YjTNEhQQEOdK1ag6Jy6VA"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="applebee's chicken tenders platter chicken tenders + sides aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Applebee's</strong></td>
-                                <td>Chicken Tenders Platter</td>
-                                <td><strong>$20.69</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>High</td>
-                                <td>Chicken tenders + sides</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~700–900</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/applebees-n-international-dr/-YjTNEhQQEOdK1ag6Jy6VA"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="applebee's classic combo shareable appetizer platter aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Applebee's</strong></td>
-                                <td>Classic Combo</td>
-                                <td><strong>$23.79</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>Shareable appetizer platter</td>
-                                <td><strong>~$7–$10</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/applebees-n-international-dr/-YjTNEhQQEOdK1ag6Jy6VA"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="olive garden chicken parmigiana chicken parm + spaghetti + salad aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Olive Garden</strong></td>
-                                <td>Chicken Parmigiana</td>
-                                <td><strong>~$20–$24</strong></td>
-                                <td>~1,000+</td>
-                                <td>~50 g</td>
-                                <td>High</td>
-                                <td>Chicken parm + spaghetti + salad</td>
-                                <td><strong>~$5–$7</strong></td>
-                                <td>~700–900</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link" href="https://www.olivegarden.com/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="olive garden fettuccine alfredo fettuccine + lighter alfredo aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Olive Garden</strong></td>
-                                <td>Fettuccine Alfredo</td>
-                                <td><strong>~$17–$21</strong></td>
-                                <td>~1,200+</td>
-                                <td>~30 g</td>
-                                <td>High</td>
-                                <td>Fettuccine + lighter Alfredo</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~650–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.olivegarden.com/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="olive garden lasagna classico frozen/fresh lasagna + salad aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Olive Garden</strong></td>
-                                <td>Lasagna Classico</td>
-                                <td><strong>~$18–$22</strong></td>
-                                <td>~900+</td>
-                                <td>~45 g</td>
-                                <td>High</td>
-                                <td>Frozen/fresh lasagna + salad</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~650–850</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link" href="https://www.olivegarden.com/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="olive garden five cheese ziti al forno baked ziti + salad aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Olive Garden</strong></td>
-                                <td>Five Cheese Ziti al Forno</td>
-                                <td><strong>~$17–$21</strong></td>
-                                <td>~1,100+</td>
-                                <td>~40 g</td>
-                                <td>High</td>
-                                <td>Baked ziti + salad</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~650–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.olivegarden.com/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="olive garden family chicken parmigiana family chicken parm + pasta aldi / costco">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Olive Garden</strong></td>
-                                <td>Family Chicken Parmigiana</td>
-                                <td><strong>~$60</strong></td>
-                                <td>Serves 4–6</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Family chicken parm + pasta</td>
-                                <td><strong>~$24–$30</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Costco</td>
-                                <td><a class="source-link" href="https://www.olivegarden.com/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="texas roadhouse 6 oz sirloin dinner 6 oz sirloin + 2 sides aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Texas Roadhouse</strong></td>
-                                <td>6 oz Sirloin Dinner</td>
-                                <td><strong>~$14–$19</strong></td>
-                                <td>Varies</td>
-                                <td>~45 g</td>
-                                <td>Moderate</td>
-                                <td>6 oz sirloin + 2 sides</td>
-                                <td><strong>~$7–$9</strong></td>
-                                <td>~550–750</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.texasroadhouse.com/global-menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="texas roadhouse grilled bbq chicken dinner bbq chicken + two sides aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Texas Roadhouse</strong></td>
-                                <td>Grilled BBQ Chicken Dinner</td>
-                                <td><strong>~$14–$18</strong></td>
-                                <td>Varies</td>
-                                <td>~45 g</td>
-                                <td>Moderate</td>
-                                <td>BBQ chicken + two sides</td>
-                                <td><strong>~$5–$7</strong></td>
-                                <td>~500–700</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.texasroadhouse.com/global-menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="texas roadhouse chicken critters dinner chicken tenders + 2 sides aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Texas Roadhouse</strong></td>
-                                <td>Chicken Critters Dinner</td>
-                                <td><strong>~$15–$19</strong></td>
-                                <td>Varies</td>
-                                <td>~40 g</td>
-                                <td>High</td>
-                                <td>Chicken tenders + 2 sides</td>
-                                <td><strong>~$5</strong></td>
-                                <td>~650–850</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.texasroadhouse.com/global-menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="texas roadhouse sirloin & ribs combo sirloin + ribs + sides publix / aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Texas Roadhouse</strong></td>
-                                <td>Sirloin & Ribs Combo</td>
-                                <td><strong>~$23–$30</strong></td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>High</td>
-                                <td>Sirloin + ribs + sides</td>
-                                <td><strong>~$10–$13</strong></td>
-                                <td>Varies</td>
-                                <td>Publix / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.texasroadhouse.com/global-menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="texas roadhouse grilled bbq chicken & sirloin chicken + sirloin + sides aldi / publix">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>Texas Roadhouse</strong></td>
-                                <td>Grilled BBQ Chicken & Sirloin</td>
-                                <td><strong>~$22–$28</strong></td>
-                                <td>Varies</td>
-                                <td>High</td>
-                                <td>Moderate</td>
-                                <td>Chicken + sirloin + sides</td>
-                                <td><strong>~$9–$12</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.texasroadhouse.com/global-menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="ihop breakfast sampler eggs + bacon + sausage + pancakes aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>IHOP</strong></td>
-                                <td>Breakfast Sampler</td>
-                                <td><strong>~$15–$18</strong></td>
-                                <td>~900–1,100</td>
-                                <td>~35 g</td>
-                                <td>High</td>
-                                <td>Eggs + bacon + sausage + pancakes</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~650–800</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.ihop.com/en/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="ihop 2x2x2 breakfast 2 eggs + 2 bacon + 2 pancakes aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>IHOP</strong></td>
-                                <td>2x2x2 Breakfast</td>
-                                <td><strong>~$11–$14</strong></td>
-                                <td>~600–800</td>
-                                <td>~25 g</td>
-                                <td>Moderate</td>
-                                <td>2 eggs + 2 bacon + 2 pancakes</td>
-                                <td><strong>~$2.25</strong></td>
-                                <td>~500–650</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.ihop.com/en/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="ihop chicken & pancakes chicken tenders + pancakes aldi / walmart">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>IHOP</strong></td>
-                                <td>Chicken & Pancakes</td>
-                                <td><strong>~$15–$18</strong></td>
-                                <td>~900–1,100</td>
-                                <td>~35 g</td>
-                                <td>High</td>
-                                <td>Chicken tenders + pancakes</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link" href="https://www.ihop.com/en/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="ihop colorado omelette loaded omelet + toast aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>IHOP</strong></td>
-                                <td>Colorado Omelette</td>
-                                <td><strong>~$16–$19</strong></td>
-                                <td>~1,000+</td>
-                                <td>~55 g</td>
-                                <td>High</td>
-                                <td>Loaded omelet + toast</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~650–800</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.ihop.com/en/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Sit-Down"
-                              data-search="ihop classic burger + fries burger + oven fries aldi">
-                                <td><span class="badge sit">Sit-Down</span></td>
-                                <td><strong>IHOP</strong></td>
-                                <td>Classic Burger + Fries</td>
-                                <td><strong>~$14–$17</strong></td>
-                                <td>~900–1,100</td>
-                                <td>~35 g</td>
-                                <td>High</td>
-                                <td>Burger + oven fries</td>
-                                <td><strong>~$3.25</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.ihop.com/en/menu"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+                            <!-- CHIPOTLE -->
 
                             <tr data-category="Quick Service"
-                              data-search="chipotle chicken burrito bowl chicken rice bowl aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Chipotle</strong></td>
-                                <td>Chicken Burrito Bowl</td>
-                                <td><strong>~$11–$13</strong></td>
-                                <td>~650–850</td>
-                                <td>~40–50 g</td>
-                                <td>~1,200+ mg</td>
-                                <td>Chicken rice bowl</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~550–700</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.chipotle.com/"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="chipotle chicken burrito bowl aldi">
+
+                                <td>
+                                    <span class="badge quick">
+                                        Quick Service
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Chipotle
+                                </td>
+
+                                <td>
+                                    Chicken Burrito Bowl
+                                </td>
+
+                                <td>
+                                    ~$11–$14
+                                </td>
+
+                                <td>
+                                    ~650–850
+                                </td>
+
+                                <td>
+                                    Chicken rice bowl
+                                    with beans
+                                </td>
+
+                                <td>
+                                    ~$3–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.chipotle.com/" target="_blank"
+                                      rel="noopener">
+                                        Chipotle ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Quick Service"
-                              data-search="chipotle steak burrito bowl steak rice bowl aldi / publix">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Chipotle</strong></td>
-                                <td>Steak Burrito Bowl</td>
-                                <td><strong>~$12–$14</strong></td>
-                                <td>~650–850</td>
-                                <td>~40–50 g</td>
-                                <td>~1,200+ mg</td>
-                                <td>Steak rice bowl</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~550–700</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link" href="https://www.chipotle.com/"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+
+                            <!-- SHAKE SHACK -->
 
                             <tr data-category="Quick Service"
-                              data-search="chipotle chicken burrito chicken burrito aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Chipotle</strong></td>
-                                <td>Chicken Burrito</td>
-                                <td><strong>~$11–$13</strong></td>
-                                <td>~900–1,100</td>
-                                <td>~45–55 g</td>
-                                <td>High</td>
-                                <td>Chicken burrito</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~650–800</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.chipotle.com/"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="shake shack burger fries aldi">
+
+                                <td>
+                                    <span class="badge quick">
+                                        Quick Service
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Shake Shack
+                                </td>
+
+                                <td>
+                                    ShackBurger + Fries
+                                </td>
+
+                                <td>
+                                    ~$16+
+                                </td>
+
+                                <td>
+                                    ~900+
+                                </td>
+
+                                <td>
+                                    Cheeseburger
+                                    and oven fries
+                                </td>
+
+                                <td>
+                                    ~$3–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://shakeshack.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Shake Shack ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Quick Service"
-                              data-search="chipotle sofritas bowl tofu/bean grain bowl aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Chipotle</strong></td>
-                                <td>Sofritas Bowl</td>
-                                <td><strong>~$11–$13</strong></td>
-                                <td>~600–800</td>
-                                <td>~25–35 g</td>
-                                <td>High</td>
-                                <td>Tofu/bean grain bowl</td>
-                                <td><strong>~$2.75</strong></td>
-                                <td>~500–650</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link" href="https://www.chipotle.com/"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+
+                            <!-- PANERA -->
 
                             <tr data-category="Quick Service"
-                              data-search="chipotle high-protein bowl double chicken protein bowl aldi / costco">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Chipotle</strong></td>
-                                <td>High-Protein Bowl</td>
-                                <td><strong>~$14–$18</strong></td>
-                                <td>Varies</td>
-                                <td>~46–81 g</td>
-                                <td>High</td>
-                                <td>Double chicken protein bowl</td>
-                                <td><strong>~$5.25</strong></td>
-                                <td>~600–800</td>
-                                <td>ALDI / Costco</td>
-                                <td><a class="source-link" href="https://www.chipotle.com/"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="panera soup sandwich publix">
+
+                                <td>
+                                    <span class="badge quick">
+                                        Quick Service
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Panera Bread
+                                </td>
+
+                                <td>
+                                    Soup + Sandwich
+                                </td>
+
+                                <td>
+                                    ~$10–$15
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Homemade soup
+                                    and sandwich
+                                </td>
+
+                                <td>
+                                    ~$4–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.publix.com/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        Publix ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.panerabread.com/en-us/menu.html"
+                                      target="_blank" rel="noopener">
+                                        Panera ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Quick Service"
-                              data-search="shake shack shackburger + fries cheeseburger + crinkle fries aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Shake Shack</strong></td>
-                                <td>ShackBurger + Fries</td>
-                                <td><strong>$16.28</strong></td>
-                                <td>~900–1,000</td>
-                                <td>~32 g</td>
-                                <td>High</td>
-                                <td>Cheeseburger + crinkle fries</td>
-                                <td><strong>~$3.25</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/shake-shack-international-drive/tEgC3zD0Rnq3cNFLZ56weg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+
+                            <!-- CAVA -->
 
                             <tr data-category="Quick Service"
-                              data-search="shake shack chicken shack + fries chicken sandwich + fries walmart / aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Shake Shack</strong></td>
-                                <td>Chicken Shack + Fries</td>
-                                <td><strong>$17.58</strong></td>
-                                <td>~950–1,100</td>
-                                <td>~35 g</td>
-                                <td>High</td>
-                                <td>Chicken sandwich + fries</td>
-                                <td><strong>~$3.90</strong></td>
-                                <td>~700–850</td>
-                                <td>Walmart / ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/shake-shack-international-drive/tEgC3zD0Rnq3cNFLZ56weg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="cava grain bowl falafel aldi">
+
+                                <td>
+                                    <span class="badge quick">
+                                        Quick Service
+                                    </span>
+                                </td>
+
+                                <td>
+                                    CAVA
+                                </td>
+
+                                <td>
+                                    Grain Bowl
+                                </td>
+
+                                <td>
+                                    ~$13–$18
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Homemade grain bowl
+                                    with vegetables
+                                </td>
+
+                                <td>
+                                    ~$3–$5
+                                </td>
+
+                                <td>
+                                    <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                                      class="source-link">
+                                        ALDI ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://cava.com/menu" target="_blank" rel="noopener">
+                                        CAVA ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Quick Service"
-                              data-search="shake shack double shackburger + fries double cheeseburger + fries aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Shake Shack</strong></td>
-                                <td>Double ShackBurger + Fries</td>
-                                <td><strong>$19.48</strong></td>
-                                <td>~1,100–1,250</td>
-                                <td>~50 g</td>
-                                <td>High</td>
-                                <td>Double cheeseburger + fries</td>
-                                <td><strong>~$4.50</strong></td>
-                                <td>~900–1,050</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/shake-shack-international-drive/tEgC3zD0Rnq3cNFLZ56weg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
+
+                            <!-- PANDA EXPRESS -->
 
                             <tr data-category="Quick Service"
-                              data-search="shake shack cheeseburger + fries cheeseburger + fries aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Shake Shack</strong></td>
-                                <td>Cheeseburger + Fries</td>
-                                <td><strong>$16.28</strong></td>
-                                <td>~850–1,000</td>
-                                <td>~30 g</td>
-                                <td>High</td>
-                                <td>Cheeseburger + fries</td>
-                                <td><strong>~$3.10</strong></td>
-                                <td>~700–850</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/shake-shack-international-drive/tEgC3zD0Rnq3cNFLZ56weg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
+                              data-search="panda express rice chicken walmart">
+
+                                <td>
+                                    <span class="badge quick">
+                                        Quick Service
+                                    </span>
+                                </td>
+
+                                <td>
+                                    Panda Express
+                                </td>
+
+                                <td>
+                                    Bowl
+                                </td>
+
+                                <td>
+                                    ~$10–$12
+                                </td>
+
+                                <td>
+                                    Varies
+                                </td>
+
+                                <td>
+                                    Rice +
+                                    homemade stir fry
+                                </td>
+
+                                <td>
+                                    ~$3–$4
+                                </td>
+
+                                <td>
+                                    <a href="https://www.walmart.com/" target="_blank"
+                                      rel="noopener" class="source-link">
+                                        Walmart ↗
+                                    </a>
+                                </td>
+
+                                <td>
+                                    <a href="https://www.pandaexpress.com/menu" target="_blank"
+                                      rel="noopener">
+                                        Panda Express ↗
+                                    </a>
+                                </td>
+
                             </tr>
 
-                            <tr data-category="Quick Service"
-                              data-search="shake shack chicken bites + fries chicken bites + fries aldi / walmart">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Shake Shack</strong></td>
-                                <td>Chicken Bites + Fries</td>
-                                <td><strong>$13.18</strong></td>
-                                <td>~700–900</td>
-                                <td>~30 g</td>
-                                <td>High</td>
-                                <td>Chicken bites + fries</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~600–750</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/shake-shack-international-drive/tEgC3zD0Rnq3cNFLZ56weg"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panera mix & match: 2 items soup + half sandwich at home aldi / publix">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panera</strong></td>
-                                <td>Mix & Match: 2 items</td>
-                                <td><strong>~$10</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Soup + half sandwich at home</td>
-                                <td><strong>~$4–$5</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.panerabread.com/en-us/menu.html"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panera bacon turkey bravo + soup turkey sandwich + soup aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panera</strong></td>
-                                <td>Bacon Turkey Bravo + Soup</td>
-                                <td><strong>~$10</strong></td>
-                                <td>Varies</td>
-                                <td>~25–35 g</td>
-                                <td>Moderate–High</td>
-                                <td>Turkey sandwich + soup</td>
-                                <td><strong>~$4.25</strong></td>
-                                <td>~500–700</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.panerabread.com/en-us/menu.html"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panera fuji apple chicken salad + soup chicken salad + soup aldi / publix">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panera</strong></td>
-                                <td>Fuji Apple Chicken Salad + Soup</td>
-                                <td><strong>~$10</strong></td>
-                                <td>Varies</td>
-                                <td>~25–35 g</td>
-                                <td>Moderate</td>
-                                <td>Chicken salad + soup</td>
-                                <td><strong>~$4.75</strong></td>
-                                <td>~450–650</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.panerabread.com/en-us/menu.html"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panera toasted caprese + tomato soup caprese sandwich + soup aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panera</strong></td>
-                                <td>Toasted Caprese + Tomato Soup</td>
-                                <td><strong>~$10</strong></td>
-                                <td>Varies</td>
-                                <td>~20–30 g</td>
-                                <td>Moderate–High</td>
-                                <td>Caprese sandwich + soup</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~450–650</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.panerabread.com/en-us/menu.html"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panera chicken noodle + half sandwich chicken soup + sandwich aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panera</strong></td>
-                                <td>Chicken Noodle + Half Sandwich</td>
-                                <td><strong>~$10</strong></td>
-                                <td>Varies</td>
-                                <td>~20–30 g</td>
-                                <td>Moderate–High</td>
-                                <td>Chicken soup + sandwich</td>
-                                <td><strong>~$3.50</strong></td>
-                                <td>~450–650</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.panerabread.com/en-us/menu.html"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="cava falafel crunch falafel grain bowl aldi / trader joe's">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>CAVA</strong></td>
-                                <td>Falafel Crunch</td>
-                                <td><strong>$13.71</strong></td>
-                                <td>Varies</td>
-                                <td>~20–30 g</td>
-                                <td>Moderate–High</td>
-                                <td>Falafel grain bowl</td>
-                                <td><strong>~$3.25</strong></td>
-                                <td>~500–700</td>
-                                <td>ALDI / Trader Joe's</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/cava-sodo/X5GjNd3oVxayO4O2f6GNgQ"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="cava steak + harissa steak grain bowl aldi / publix">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>CAVA</strong></td>
-                                <td>Steak + Harissa</td>
-                                <td><strong>$17.84</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>Moderate–High</td>
-                                <td>Steak grain bowl</td>
-                                <td><strong>~$5.25</strong></td>
-                                <td>~550–750</td>
-                                <td>ALDI / Publix</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/cava-sodo/X5GjNd3oVxayO4O2f6GNgQ"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="cava chicken + rice chicken rice bowl aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>CAVA</strong></td>
-                                <td>Chicken + Rice</td>
-                                <td><strong>$13.71</strong></td>
-                                <td>Varies</td>
-                                <td>~35–45 g</td>
-                                <td>Moderate</td>
-                                <td>Chicken rice bowl</td>
-                                <td><strong>~$3.75</strong></td>
-                                <td>~500–700</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/cava-winter-springs/KPzpjXp6ULKDKY5-Nt5ikw"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="cava greens + grains bowl greens + grains bowl aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>CAVA</strong></td>
-                                <td>Greens + Grains Bowl</td>
-                                <td><strong>$13.71</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Moderate</td>
-                                <td>Greens + grains bowl</td>
-                                <td><strong>~$3.00</strong></td>
-                                <td>~450–650</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/cava-winter-springs/KPzpjXp6ULKDKY5-Nt5ikw"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="cava pita stuffed pita + salad aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>CAVA</strong></td>
-                                <td>Pita</td>
-                                <td><strong>$13.71</strong></td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Moderate–High</td>
-                                <td>Stuffed pita + salad</td>
-                                <td><strong>~$3.25</strong></td>
-                                <td>~500–700</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/cava-winter-springs/KPzpjXp6ULKDKY5-Nt5ikw"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panda express bowl rice + one stir-fry entrée aldi / walmart">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panda Express</strong></td>
-                                <td>Bowl</td>
-                                <td><strong>$10.20</strong></td>
-                                <td>Varies by choice</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Rice + one stir-fry entrée</td>
-                                <td><strong>~$3.00</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/panda-express"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panda express plate rice + two stir-fry entrées aldi / walmart">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panda Express</strong></td>
-                                <td>Plate</td>
-                                <td><strong>$12.60</strong></td>
-                                <td>Varies by choice</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Rice + two stir-fry entrées</td>
-                                <td><strong>~$4.25</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/panda-express"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panda express bigger plate rice + three stir-fry entrées aldi / walmart">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panda Express</strong></td>
-                                <td>Bigger Plate</td>
-                                <td><strong>$15.00</strong></td>
-                                <td>Varies by choice</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Rice + three stir-fry entrées</td>
-                                <td><strong>~$5.50</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/panda-express"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panda express panda cub meal kid rice/chicken/fruit meal aldi">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panda Express</strong></td>
-                                <td>Panda Cub Meal</td>
-                                <td><strong>$8.20</strong></td>
-                                <td>Varies by choice</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Kid rice/chicken/fruit meal</td>
-                                <td><strong>~$2.00</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/store/panda-express-e-michigan-st-%26-s-orange-ave/pGfHpgqeXYGQRG5FGwjzrA"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
-
-                            <tr data-category="Quick Service"
-                              data-search="panda express family meal family stir-fry night aldi / walmart">
-                                <td><span class="badge quick">Quick Service</span></td>
-                                <td><strong>Panda Express</strong></td>
-                                <td>Family Meal</td>
-                                <td><strong>$49.20</strong></td>
-                                <td>Serves several</td>
-                                <td>Varies</td>
-                                <td>Varies</td>
-                                <td>Family stir-fry night</td>
-                                <td><strong>~$18–$25</strong></td>
-                                <td>Varies</td>
-                                <td>ALDI / Walmart</td>
-                                <td><a class="source-link"
-                                      href="https://www.ubereats.com/brand-city/orlando-fl/panda-express"
-                                      target="_blank" rel="noopener">menu/source ↗</a></td>
-                            </tr>
 
                         </tbody>
+
                     </table>
+
                 </div>
+
             </div>
+
         </section>
 
-        <section id="family" class="band">
+
+        <!-- =========================
+             FAMILY MEALS
+        ========================== -->
+
+        <section class="band">
+
             <div class="container">
-                <span class="eyebrow">Fast family alternatives</span>
-                <h2>Not every low-cost dinner has to be cooked from scratch.</h2>
-                <p>Prepared grocery meals and family bundles can sit between home cooking and
-                    restaurant dining: less prep, predictable portions and often a lower per-person
-                    price than individual restaurant entrées.</p>
+
+                <span class="eyebrow">
+                    Family Meal Ideas
+                </span>
+
+                <h2>
+                    Save time. Spend less. Feed the Whole Family*.
+
+                </h2>
+
 
                 <div class="deal-grid">
-                    <article class="deal">
-                        <h3>Whole Foods Market — Build Your Own Family Meal</h3>
-                        <div class="price">$35</div>
-                        <p><strong>About $8.75 per person for four.</strong> Recent reporting
-                            describes a mix-and-match prepared-food deal with one protein and two
-                            sides. Availability and exact choices can vary by store.</p>
-                        <p><a class="source-link" href="https://www.wholefoodsmarket.com/"
-                              target="_blank" rel="noopener">Check your local Whole Foods ↗</a></p>
-                    </article>
+
 
                     <article class="deal">
-                        <h3>Panera — Mix & Match</h3>
-                        <div class="price">~$10</div>
-                        <p>Two $5 items can create a soup/salad/sandwich meal with a side. For a
-                            family of four, mixing soups, salads and half sandwiches can provide a
-                            quick dinner while keeping each person near a predictable budget.</p>
-                        <p><a class="source-link" href="https://www.panerabread.com/en-us/menu.html"
-                              target="_blank" rel="noopener">See current Panera menu ↗</a></p>
+
+                        <h3>
+                            Whole Foods Family Meal
+                        </h3>
+
+                        <div class="price">
+                            ~$35
+                        </div>
+
+                        <p>
+                            A prepared family meal can offer
+                            a convenient alternative to buying
+                            four separate restaurant meals.
+                        </p>
+
+                        <a href="https://www.wholefoodsmarket.com/" target="_blank" rel="noopener"
+                          class="source-link">
+                            Whole Foods Market ↗
+                        </a>
+
                     </article>
 
-                    <article class="deal">
-                        <h3>ALDI — Taco Night Kit</h3>
-                        <div class="price">~$18–$24</div>
-                        <p>Ground turkey or beef, tortillas, beans, shredded cheese, salsa and
-                            lettuce can make 6–8 servings. Use leftover taco filling the next day
-                            for bowls, salads or quesadillas — a direct food-waste prevention
-                            strategy.</p>
-                        <p><a class="source-link" href="https://www.aldi.us/" target="_blank"
-                              rel="noopener">Shop ALDI ↗</a></p>
-                    </article>
 
                     <article class="deal">
-                        <h3>Rotisserie Chicken + Two Sides</h3>
-                        <div class="price">~$20–$30</div>
-                        <p>Buy a prepared chicken, salad/vegetable and a starch from a grocery deli.
-                            Dinner becomes nearly immediate, while leftover chicken can become
-                            wraps, soup, tacos or lunches instead of becoming waste.</p>
-                        <p><a class="source-link" href="https://www.publix.com/" target="_blank"
-                              rel="noopener">Publix ↗</a> &nbsp; <a class="source-link"
-                              href="https://www.walmart.com/" target="_blank" rel="noopener">Walmart
-                                ↗</a></p>
+
+                        <h3>
+                            ALDI Taco Night
+                        </h3>
+
+                        <div class="price">
+                            ~$18–$24
+                        </div>
+
+                        <p>
+                            Beef or turkey, tortillas, beans,
+                            cheese, salsa, and vegetables
+                            can provide several servings.
+                        </p>
+
+                        <a href="https://www.aldi.us/" target="_blank" rel="noopener"
+                          class="source-link">
+                            Shop ALDI ↗
+                        </a>
+
                     </article>
+
+
+                    <article class="deal">
+
+                        <h3>
+                            Rotisserie Chicken Dinner
+                        </h3>
+
+                        <div class="price">
+                            ~$20–$30
+                        </div>
+
+                        <p>
+                            Add vegetables and a starch.
+                            Leftover chicken can become
+                            wraps, sandwiches, soup,
+                            or another dinner.
+                        </p>
+
+                        <a href="https://www.publix.com/" target="_blank" rel="noopener"
+                          class="source-link">
+                            Publix ↗
+                        </a>
+
+                    </article>
+
+
+                    <article class="deal">
+
+                        <h3>
+                            Family Grain Bowl Night
+                        </h3>
+
+                        <div class="price">
+                            ~$15–$25
+                        </div>
+
+                        <p>
+                            Rice, beans, chicken,
+                            vegetables, salsa,
+                            and toppings create
+                            customizable meals.
+                        </p>
+
+                        <a href="https://www.walmart.com/" target="_blank" rel="noopener"
+                          class="source-link">
+                            Walmart ↗
+                        </a>
+
+                    </article>
+
+                    <div class="asterisk">
+                        <p>
+                            *Based on average family size
+                        </p>
+                    </div>
+
+
                 </div>
+
             </div>
+
         </section>
 
-        <section>
-            <div class="container two-col">
-                <div class="photo-placeholder">STOCK PHOTO SPACE<br><br>Family assembling a quick
-                    dinner at home.</div>
-                <div>
-                    <span class="eyebrow">The bigger lesson</span>
-                    <h2>Count future servings, not just today's receipt.</h2>
-                    <p>A $12 restaurant meal normally represents one eating occasion. A $12 grocery
-                        purchase may contain buns, patties, frozen vegetables or other ingredients
-                        that continue into later meals. The most meaningful comparison is therefore
-                        <strong>cost per usable serving</strong> — and whether the remaining food is
-                        actually planned into future meals.
-                    </p>
-                    <p>That is where meal planning and food-waste prevention overlap: a lower
-                        grocery cost only becomes a real savings when the household uses what it
-                        buys.</p>
-                </div>
-            </div>
-        </section>
-
-        <section class="references">
-            <div class="container">
-                <span class="eyebrow">Source notes</span>
-                <h2>Price and nutrition transparency</h2>
-                <ul>
-                    <li>McDonald's Orlando price/calorie examples: Uber Eats Orlando brand listing;
-                        McDonald's official menu for product nutrition.</li>
-                    <li>Chick-fil-A, Burger King, Chili's, Applebee's, Shake Shack, CAVA, Panda
-                        Express and Popeyes: current Orlando/Central Florida Uber Eats or Grubhub
-                        menu snapshots linked in-table. Delivery prices may exceed in-store prices.
-                    </li>
-                    <li>Applebee's 2 for $25 and Texas Roadhouse menu references use the brands'
-                        current official promotion/menu pages.</li>
-                    <li>Whole Foods Family Meal: current 2026 consumer-food reporting describes a
-                        $35 build-your-own prepared-food meal serving four; confirm availability at
-                        the selected Central Florida store.</li>
-                    <li>At-home cost and nutrition values are estimates for comparable servings, not
-                        claims that recipes are nutritionally identical. Replace estimates with
-                        exact local grocery SKU values as your final product list is chosen.</li>
-                </ul>
-            </div>
-        </section>
     </main>
 
+
     <footer>
+
         <div class="container">
-            <strong>Central Florida Saves Food</strong><br>
-            A public-awareness project about food, household cost and waste reduction.
+
+            <strong>
+                Stop Waste Florida
+            </strong>
+
+            <p>
+
+                <a href="stopwaste.html">
+                    Home
+                </a>
+
+                |
+
+                <a href="food-waste-impact.html">
+                    Food Waste Impact
+                </a>
+
+            </p>
+
         </div>
+
     </footer>
 
+
     <script src="js/meal-comparison.js"></script>
+
 </body>
 
 </html>
